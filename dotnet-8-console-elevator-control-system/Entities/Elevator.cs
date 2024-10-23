@@ -1,8 +1,5 @@
 ﻿using dotnet_8_console_elevator_control_system.Core.Enums;
 
-using System;
-using System.Collections.Generic;
-
 namespace dotnet_8_console_elevator_control_system.Entities
 {
     public class Elevator

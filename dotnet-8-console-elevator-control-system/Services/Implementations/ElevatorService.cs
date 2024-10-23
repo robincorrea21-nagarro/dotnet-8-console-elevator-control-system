@@ -1,10 +1,6 @@
 ﻿using dotnet_8_console_elevator_control_system.Core.Enums;
 using dotnet_8_console_elevator_control_system.Entities;
 
-using System;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace dotnet_8_console_elevator_control_system.Services
 {
     public class ElevatorService
