@@ -1,7 +1,12 @@
 ﻿using dotnet_8_console_elevator_control_system.Entities;
+using dotnet_8_console_elevator_control_system.Services;
 
-// Top-Level Program Logic
-var building = new Building(4); // Create a building with 4 elevators
+// Initialize services
+var elevatorService = new ElevatorService();
+var buildingService = new BuildingService(elevatorService);
 
-// Start the elevator request logic, which triggers only after an elevator stops
-await building.StartElevatorSystemAsync();
+// Create a building with 4 elevators
+var building = new Building(4);
+
+// Start the elevator request system
+await buildingService.StartElevatorSystemAsync(building);
